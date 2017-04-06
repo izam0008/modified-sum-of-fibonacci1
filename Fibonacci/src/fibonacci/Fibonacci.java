@@ -20,15 +20,15 @@ public class Fibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input : ");
         int count=sc.nextInt();
-        int n1=0,n2=1,n3;    
-        System.out.print(n2+" ");//printing 0 and 1    
+        int n1=0,n2=1,n3, jum=1;   
     
         for(int i=1;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
         {    
          n3=n1+n2;    
-         System.out.print(n3+" ");    
+         jum += n3;
          n1=n2;    
          n2=n3;    
-        }    
+        }
+        System.out.println(jum);
     }
 }
